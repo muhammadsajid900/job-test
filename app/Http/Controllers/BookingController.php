@@ -42,7 +42,7 @@ class BookingController extends Controller
     public function index(Request $request)
     {
         try {
-            // the best practice is create a request add do all validation in that 
+            // the best practice is create a request add do all validation in that in whole project validation and error handling is missing
             $request->validate([
                 'user_id' => 'sometimes|integer|exists:users,id',
             ]);
